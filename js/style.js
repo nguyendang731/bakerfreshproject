@@ -103,11 +103,9 @@ $(function () {
             $(this).closest(".content_bot").find(".price span").text(convertMoney($sum));
             $(".s_total .sum span").text(convertMoney($total));
         });
-        
     });
-
-    AOS.init();
 });
+
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value;
