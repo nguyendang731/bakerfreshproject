@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product-details</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
+
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Slick slider -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <!-- Css global -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Css local -->
+        <link rel="stylesheet" href="css/product-details.css" />
+    </head>
+    <body>
+        <!-- Chọn 2 font: 1 font primary, 1 font secondary -->
+        <!-- Chọn 2 màu: 1 màu primary, 1 màu secondary -->
+
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <div class="nav-box d-flex w-100 align-items-center">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="" srcset="" /></a>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown">PRODUCT</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="product.html">Breadstick</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Baguette</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Chillex</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Pumpernickel</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                        <div class="icon">
+                            <a class="icon-search" href="javascript:;">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                            <a href="oder.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            <a href="account.html"><i class="fa-sharp fa-solid fa-user"></i></a>
+                            <a class="nav-btn" data-bs-toggle="offcanvas" data-bs-target="#cart" href="javascript:;"><i class="fa-solid fa-bars"></i></a>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search" />
+                        <a href="product-details.html"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" id="cart">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Menu</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><input type="text" placeholder="Search..." /></li>
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="about.html"></a>About</li>
+                    <li><a href="product.html"></a>Product</li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact-us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social_media">
+            <ul>
+                <div class="media">
+                    <li>
+                        <a href="contact.html"><i class="fa-solid fa-comment"></i></a>
+                    </li>
+                    <li class="phone">
+                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                        <h3>03456789</h3>
+                    </li>
+                    <li class="scroll-top" onclick="topFunction()">
+                        <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="product-details">
+            <div class="banner">
+                <div class="img"><img src="img/product/product-banner.webp" alt="" /></div>
+                <h1>Product Details</h1>
+                <div class="text"><a href="">Home</a><span>/Details</span></div>
+            </div>
+        </div>
+
+        <div class="product-details-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left"><img src="img/product/product-1.webp" alt="" /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right">
+                            <div class="top">
+                                <div class="text">
+                                    <h3>$4.99</h3>
+                                    <p>
+                                        Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure
+                                        tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                    </p>
+                                </div>
+                                <div class="buttons_added">
+                                    <input class="minus is-form" type="button" value="-" />
+                                    <input value="1" aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="" />
+                                    <input class="plus is-form" type="button" value="+" />
+                                </div>
+                                <a href="oder.html"><button>Add to cart</button></a>
+                            </div>
+                            <div class="bottom">
+                                <ul>
+                                    <li>SKU: REF. LA-1580</li>
+                                    <li>Category: Cupcake</li>
+                                    <li>Tag: Cake 4</li>
+                                </ul>
+                                <div class="icon">
+                                    <h5>Share:</h5>
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <h1>Description</h1>
+                <div class="row">
+                    <div class="tab-pane-item col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="left"><img src="img/product-detail/detail-1.jpg" alt="" /></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right">
+                                    <h3>We Love Cake</h3>
+                                    <p>
+                                        Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus. Pellentesque vulputate quam a quam volutpat, sed ullamcorper
+                                        erat commodo. Vestibulum sit amet ipsum vitae mauris mattis vulputate lacinia nec neque. Aenean quis consectetur nisi, ac interdum elit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product_us-content">
+            <div class="our-menu">
+                <div class="container">
+                    <h1>Related Product</h1>
+                    <div class="row">
+                        <div class="our-menu-slide">
+                            <div class="item">
+                                <div class="product-card">
+                                    <a class="" href="">
+                                        <div class="card">
+                                            <img src="img/product/product-1.webp" alt="" />
+                                            <div class="icon">
+                                                <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-right-left"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul>
+                                                <a href=""><li>Brownie</li></a>
+                                                <li><span>$4.99</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product-card">
+                                    <a class="" href="">
+                                        <div class="card">
+                                            <img src="img/product/product-2.webp" alt="" />
+                                            <div class="icon">
+                                                <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-right-left"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul>
+                                                <a href=""><li>Red Velvet</li></a>
+                                                <li><span>$3.99</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product-card">
+                                    <a class="" href="">
+                                        <div class="card">
+                                            <img src="img/product/product-5.webp" alt="" />
+                                            <div class="icon">
+                                                <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-right-left"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul>
+                                                <a href=""><li>Cream Muffin</li></a>
+                                                <li><span>$6.99</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product-card">
+                                    <a class="" href="">
+                                        <div class="card">
+                                            <img src="img/product/product-6.webp" alt="" />
+                                            <div class="icon">
+                                                <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-right-left"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul>
+                                                <a href=""><li>Cream Muffin</li></a>
+                                                <li><span>$6.99</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product-card">
+                                    <a class="" href="">
+                                        <div class="card">
+                                            <img src="img/product/product-8.webp" alt="" />
+                                            <div class="icon">
+                                                <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-right-left"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul>
+                                                <a href=""><li>Cream Muffin</li></a>
+                                                <li><span>$6.99</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product-card">
+                                    <a class="" href="">
+                                        <div class="card">
+                                            <img src="img/product/product-7.webp" alt="" />
+                                            <div class="icon">
+                                                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-right-left"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul>
+                                                <a href=""><li>Cream Muffin</li></a>
+                                                <li><span>$6.99</span></li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="img/logo.svg" alt="" />
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>CATEGORIES</h5>
+                        <ul>
+                            <li><a href="product.html">Cupcake</a></li>
+                            <li><a href="product.html">Pastry</a></li>
+                            <li><a href="product.html">Muffin</a></li>
+                            <li><a href="product.html">Waffle</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>SERVICES</h5>
+                        <ul>
+                            <li><a href="product.html">Delivery</a></li>
+                            <li><a href="product.html">Payment</a></li>
+                            <li><a href="product.html">Returns</a></li>
+                            <li><a href="product.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>INFORMATION</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="product.html">Product</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- Bootstrap 5 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- slick slider -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- js myself -->
+        <script src="js/style.js"></script>
+    </body>
+</html>

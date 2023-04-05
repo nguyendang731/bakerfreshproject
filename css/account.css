@@ -1,0 +1,104 @@
+body {
+     background-color: #fff;
+     --primary-color: rgb(168, 99, 53);
+     --secondary-color: rgb(5, 5, 5);
+     font-family: "Golos Text", sans-serif;
+     position: relative;
+}
+.account {
+     position: relative;
+}
+.account .img {
+     position: relative;
+}
+.account .img::before {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.445);
+}
+.account h1 {
+     position: absolute;
+     color: #fff;
+     top: 48%;
+     left: 44%;
+     font-size: 50px;
+}
+.account .text {
+     position: absolute;
+     color: #fff;
+     top: 70%;
+     left: 47%;
+}
+.account .text a {
+     color: #fff;
+}
+
+.nav-pills .nav-link {
+     color: black;
+     margin: 100px;
+     font-size: 20px;
+     border-radius: 0;
+     font-weight: 500;
+}
+.nav-pills .nav-link.active {
+     background-color: var(--primary-color);
+     color: #fff;
+}
+.tab-content {
+     position: relative;
+}
+.form-check-input:checked {
+     background-color: var(--primary-color);
+     border-color: var(--primary-color);
+}
+.tab-content .tab-content-top {
+     margin-left: 420px;
+     margin-top: -100px;
+}
+.tab-content .tab-content-top h5 {
+     font-size: 24px;
+     margin-top: 30px;
+}
+.tab-content .tab-content-top .input {
+     margin-top: 10px;
+     padding: 16px;
+     width: 35%;
+}
+.tab-content .tab-content-top .form-check {
+     margin-top: 20px;
+}
+.tab-content .tab-content-top button {
+     padding: 16px 60px;
+     border: none;
+     background-color: #000000e1;
+     color: #fff;
+     transition: 0.5s;
+}
+.tab-content .tab-content-top button:hover {
+     background-color: var(--primary-color);
+     color: #fff;
+}
+.tab-content .tab-content-top li {
+     margin-top: 20px;
+     color: var(--primary-color);
+}
+.tab-content .tab-content-top a {
+     color: var(--primary-color);
+     transition: 0.5s;
+}
+.tab-content .tab-content-top a:hover {
+     color: rgb(156, 71, 13);
+}
+.tab-content .tab-content-top p {
+     font-size: 12px;
+     width: 35%;
+     color: rgba(0, 0, 0, 0.404);
+}
+.tab-content .tab-content-top h5 {
+     font-size: 16px;
+     font-weight: 500;
+}

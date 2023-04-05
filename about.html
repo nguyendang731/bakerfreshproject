@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about</title>
+
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Slick slider -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <!-- Css global -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <!-- Css local -->
+        <link rel="stylesheet" href="css/about.css" />
+    </head>
+    <body>
+        <!-- Chọn 2 font: 1 font primary, 1 font secondary -->
+        <!-- Chọn 2 màu: 1 màu primary, 1 màu secondary -->
+
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <div class="nav-box d-flex w-100 align-items-center">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="" srcset="" /></a>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown">PRODUCT</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="product.html">Breadstick</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Baguette</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Chillex</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Pumpernickel</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                        <div class="icon">
+                            <a class="icon-search" href="javascript:;">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                            <a href="oder.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            <a href="account.html"><i class="fa-sharp fa-solid fa-user"></i></a>
+                            <a class="nav-btn" data-bs-toggle="offcanvas" data-bs-target="#cart" href="javascript:;"><i class="fa-solid fa-bars"></i></a>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search" />
+                        <a href="product-details.html"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" id="cart">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Menu</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><input type="text" placeholder="Search..." /></li>
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="about.html"></a>About</li>
+                    <li><a href="product.html"></a>Product</li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact-us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social_media">
+            <ul>
+                <div class="media">
+                    <li>
+                        <a href="contact.html"><i class="fa-solid fa-comment"></i></a>
+                    </li>
+                    <li class="phone">
+                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                        <h3>03456789</h3>
+                    </li>
+                    <li class="scroll-top" onclick="topFunction()">
+                        <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="about_us-banner">
+            <div class="container-fluid">
+                <div class="img">
+                    <img src="img/about-us/banner-about_us.png" alt="" />
+                </div>
+                <h1>About Us</h1>
+                <div class="text"><a href="index.html">Home</a><span>/About Us</span></div>
+            </div>
+        </div>
+
+        <div class="about_us-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5 data-aos="fade-right" data-aos-duration="1500">We Are Bakerfresh</h5>
+                        <h1 data-aos="fade-right" data-aos-duration="1500">WE LOVE CAKE</h1>
+                        <p data-aos="fade-right" data-aos-duration="1500">
+                            Nullam dictum, justo eu blandit lacinia, diam libero porta sem, sit amet molestie tellus lacus non orci. Nullam orci urna, egestas at dui vel, sagittis semper est.
+                        </p>
+                        <p data-aos="fade-right" data-aos-duration="1500">
+                            Vestibulum eu tristique tellus. Praesent at varius nisi, ut dignissim lectus. Praesent venenatis ipsum in arcu ullamcorper tristique. Aliquam et gravida magna, ut tincidunt
+                            massa.
+                        </p>
+                        <div class="ki" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="" src="img/about-us/about_us-ki.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500">
+                        <img src="img/about-us/banner-about_us-content.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about_us-banner-1" data-aos="flip-left" data-aos-duration="1500">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ceo-slide">
+                            <div class="item">
+                                <img src="img/about-us/ceo/ceo-1.jpg" alt="" />
+                                <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>
+                                    “Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum
+                                    croissant.”
+                                </p>
+                                <h3>Logan May - <span>CEO & Founder Invision</span></h3>
+                            </div>
+                            <div class="item">
+                                <img src="img/about-us/ceo/ceo-1.jpg" alt="" />
+                                <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>
+                                    “Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum
+                                    croissant.”
+                                </p>
+                                <h3>Logan May - <span>CEO & Founder Invision</span></h3>
+                            </div>
+                            <div class="item">
+                                <img src="img/about-us/ceo/ceo-1.jpg" alt="" />
+                                <div class="icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>
+                                    “Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum
+                                    croissant.”
+                                </p>
+                                <h3>Logan May - <span>CEO & Founder Invision</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="time">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500"><img src="img/about-us/banner.jpg" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h5 data-aos="fade-left" data-aos-duration="1500">Bakerfresh Time</h5>
+                            <h3 data-aos="fade-left" data-aos-duration="1500">WE ARE OPEN</h3>
+                            <p data-aos="fade-left" data-aos-duration="1500">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur</p>
+                            <ul data-aos="fade-left" data-aos-duration="1500">
+                                <li>Mon - Fri <span>9:00 am - 9:00 pm</span></li>
+                                <li>Sat - Sun <span>10:00 am - 10:00 pm</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-chef">
+            <h1>OUR CHEF</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="info">
+                            <div class="img"><img src="img/about-us/chef/chef-1.jpg" alt="" /></div>
+                            <h3>Esther Howard</h3>
+                            <p>Chef cook - Founder</p>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info">
+                            <div class="img"><img src="img/about-us/chef/chef-2.jpg" alt="" /></div>
+                            <h3>Esther Howard</h3>
+                            <p>Chef cook - Founder</p>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="info">
+                            <div class="img"><img src="img/about-us/chef/chef-3.jpg" alt="" /></div>
+                            <h3>Esther Howard</h3>
+                            <p>Chef cook - Founder</p>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customer">
+            <h1 data-aos="fade-down" data-aos-duration="1500">CUSTOMER REVIEWS</h1>
+            <div class="container" data-aos="fade-up" data-aos-duration="1500">
+                <div class="customer-slide">
+                    <div class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <p>It's amazing, the cakes here are so special that it's hard to describe, it's worth a try. I don't think I have ever eaten a better cake. I will be back again</p>
+                        <img src="img/about-us/cusomer/cusomer-1.jpg" alt="" />
+                        <ul>
+                            <li>Esther Howard</li>
+                            <li><span>New York</span></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <p>It's amazing, the cakes here are so special that it's hard to describe, it's worth a try. I don't think I have ever eaten a better cake. I will be back again</p>
+                        <img src="img/about-us/cusomer/cusomer-2.jpg" alt="" />
+                        <ul>
+                            <li>Esther Howard</li>
+                            <li><span>New York</span></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <p>It's amazing, the cakes here are so special that it's hard to describe, it's worth a try. I don't think I have ever eaten a better cake. I will be back again</p>
+                        <img src="img/about-us/cusomer/cusomer-3.jpg" alt="" />
+                        <ul>
+                            <li>Esther Howard</li>
+                            <li><span>New York</span></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <p>It's amazing, the cakes here are so special that it's hard to describe, it's worth a try. I don't think I have ever eaten a better cake. I will be back again</p>
+                        <img src="img/about-us/ceo/ceo-2.jpg" alt="" />
+                        <ul>
+                            <li>Esther Howard</li>
+                            <li><span>New York</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="img/logo.svg" alt="" />
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>CATEGORIES</h5>
+                        <ul>
+                            <li><a href="product.html">Cupcake</a></li>
+                            <li><a href="product.html">Pastry</a></li>
+                            <li><a href="product.html">Muffin</a></li>
+                            <li><a href="product.html">Waffle</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>SERVICES</h5>
+                        <ul>
+                            <li><a href="product.html">Delivery</a></li>
+                            <li><a href="product.html">Payment</a></li>
+                            <li><a href="product.html">Returns</a></li>
+                            <li><a href="product.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>INFORMATION</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="product.html">Product</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- Bootstrap 5 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- slick slider -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.sjs"></script>
+
+        <!-- js myself -->
+        <script src="js/style.js"></script>
+    </body>
+</html>

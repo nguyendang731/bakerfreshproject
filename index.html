@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
+
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Slick slider -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <!-- Css global -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <!-- Css local -->
+        <link rel="stylesheet" href="css/home.css" />
+    </head>
+    <body>
+        <!-- Chọn 2 font: 1 font primary, 1 font secondary -->
+        <!-- Chọn 2 màu: 1 màu primary, 1 màu secondary -->
+
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <div class="nav-box d-flex w-100 align-items-center">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="" srcset="" /></a>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown">PRODUCT</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="product.html">Breadstick</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Baguette</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Chillex</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Pumpernickel</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                        <div class="icon">
+                            <a class="icon-search" href="javascript:;">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                            <a href="oder.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            <a href="account.html"><i class="fa-sharp fa-solid fa-user"></i></a>
+                            <a class="nav-btn" data-bs-toggle="offcanvas" data-bs-target="#cart" href="javascript:;"><i class="fa-solid fa-bars"></i></a>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search" />
+                        <a href="product-details.html"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" id="cart">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Menu</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><input type="text" placeholder="Search..." /></li>
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="about.html"></a>About</li>
+                    <li><a href="product.html"></a>Product</li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact-us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social_media">
+            <ul>
+                <div class="media">
+                    <li>
+                        <a href="contact.html"><i class="fa-solid fa-comment"></i></a>
+                    </li>
+                    <li class="phone">
+                        <a href="javascript:;"><i class="fa-solid fa-phone"></i></a>
+                        <h3>03456789</h3>
+                    </li>
+                    <li class="scroll-top" onclick="topFunction()">
+                        <a href="javascript:;"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="header">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/home/header/banner-3.jpg" alt="New York" class="d-block" style="width: 100%" />
+                        <div class="carousel-caption">
+                            <div class="content">
+                                <p data-aos="fade-right" data-aos-duration="2000">PROMOTION</p>
+                                <h1 data-aos="fade-right" data-aos-duration="2000">Amazing Food with Fresh Daily Products & Wine</h1>
+                                <h5>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</h5>
+                                <a href="product.html"><button>DETAILS</button></a>
+                            </div>
+                            <div class="banner" data-aos="fade-left" data-aos-duration="2000"><img src="img/home/header/slider-3.png" alt="" /></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/home/header/banner-2.jpg" alt="New York" class="d-block" style="width: 100%" />
+                        <div class="carousel-caption">
+                            <div class="content">
+                                <p>PROMOTION</p>
+                                <h1>Amazing Food with Fresh Daily Products & Wine</h1>
+                                <h5>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</h5>
+                                <a href="product.html"><button>DETAILS</button></a>
+                            </div>
+                            <div class="banner">
+                                <img src="img/home/header/slider-2.png" alt="Chicago" class="d-block" style="width: 100%" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="tetx col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="banner"><img src="img/home/about-us/about-us-1.jpg" alt="" /></div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-6"><h3>1</h3></div>
+                                <div class="col-lg-6">
+                                    <h5>Bakery</h5>
+                                    <p><span>Lorem ipsum dolor sit amet, consectetur adi.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tetx col-lg-4" data-aos="fade-up" data-aos-duration="1300">
+                        <div class="banner"><img src="img/home/about-us/about-us-1.jpg" alt="" /></div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-6"><h3>2</h3></div>
+                                <div class="col-lg-6">
+                                    <h5>Bakery</h5>
+                                    <p><span>Lorem ipsum dolor sit amet, consectetur adi.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tetx col-lg-4" data-aos="fade-up" data-aos-duration="1600">
+                        <div class="banner"><img src="img/home/about-us/about-us-1.jpg" alt="" /></div>
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-lg-6"><h3>3</h3></div>
+                                <div class="col-lg-6">
+                                    <h5>Bakery</h5>
+                                    <p><span>Lorem ipsum dolor sit amet, consectetur adi.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                        <h3>OUR HISTORY</h3>
+                        <h1>Quality & Passion with our services !</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et ligula vitae est eleifend dictum a at risus. Vivamus elementum libero et quam cursus vehicula etiam ac nisi
+                            vitae dolor facilisis convallis et ut ex. Phasellus in commodo
+                        </p>
+                        <div class="ki"><img src="img/home/about-us/about-us-info1.png" alt="" /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/home/about-us/about-us-info.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quality" data-aos="fade-up" data-aos-duration="2000">
+            <img src="img/home/fresh-products/product-banner.webp" alt="" />
+            <div class="content">
+                <h3 data-aos="fade-down" data-aos-duration="1500">Fakerfresh</h3>
+                <h1 data-aos="fade-down" data-aos-duration="1500">" Quality doesn't come from the product,it comes from the method. "</h1>
+                <p data-aos="fade-down" data-aos-duration="1500">- Jenny Wilson -</p>
+            </div>
+        </div>
+
+        <div class="sale" style="background-image: url(img/home/fresh-products/product-banner-1.webp)">
+            <div class="featured-product">
+                <div class="container">
+                    <h5>CHECK ALL</h5>
+                    <h1>Fresh Products</h1>
+                    <div class="featured-slide">
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <img class="img" src="img/home/fresh-products/product-1.webp" alt="" />
+                                <h3>TOASTED BREAD</h3>
+                                <a class="view" href="product-details.html">View more</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <img class="img" src="img/home/fresh-products/product-2.webp" alt="" />
+                                <h3>SESAME BREAD</h3>
+                                <a class="view" href="product-details.html">View more</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <img class="img" src="img/home/fresh-products/product-3.webp" alt="" />
+                                <h3>ORIGINAL BREAD</h3>
+                                <a class="view" href="product-details.html">View more</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <img class="img" src="img/home/fresh-products/product-1.webp" alt="" />
+                                <h3>TOASTED BREAD</h3>
+                                <a class="view" href="product-details.html">View more</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <img class="img" src="img/home/fresh-products/product-3.webp" alt="" />
+                                <h3>SESAME BREAD</h3>
+                                <a class="view" href="product-details.html">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="story">
+            <img src="img/home/story/story-bg.webp" alt="" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5 data-aos="fade-right" data-aos-duration="1000">WE LOVE BEARD</h5>
+                        <h1 data-aos="fade-right" data-aos-duration="1000">THE STORY OF EACH BREAD</h1>
+                        <div class="content container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p data-aos="fade-right" data-aos-duration="1000">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                                        nostrud amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="blog.html"><button class="btn btn-outline-secondary" data-aos="fade-right" data-aos-duration="1000">READ MORE</button></a>
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <p>OUR MENU</p>
+            <h1>WHAT WE HAVE</h1>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#home">Breadstick</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#menu1">Baguette</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#menu2">Chillex</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#menu2">Pumpernickel</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane container active" id="home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tab-pane-item col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-1.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-2.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-3.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-4.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane-item col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-5.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-6.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-7.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-8.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="all-bread" href="">ALL BREAD</a>
+                </div>
+                <div class="tab-pane container fade" id="menu1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tab-pane-item col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-8.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-7.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-6.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></a
+                                                    >
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-5.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="javascript:;"
+                                                        ><!-- Button to Open the Modal -->
+
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                        <!-- The Modal -->
+                                                        <div class="modal" id="myModal">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <!-- Modal Header -->
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Add to cart</h4>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                                    </div>
+
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-3">
+                                                                                <img src="img/product/product-1.webp" alt="" />
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <ul>
+                                                                                    <li>Crunchy Loaf</li>
+                                                                                    <li>$4</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- Modal footer -->
+                                                                    <div class="modal-footer">
+                                                                        <a href="product-details.html"><button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add to cart</button></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane-item col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-4.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-3.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-2.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-1.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="all-bread" href="">ALL BREAD</a>
+                </div>
+                <div class="tab-pane container fade" id="menu2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tab-pane-item col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-1.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-2.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-3.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-4.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane-item col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-5.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-6.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-7.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-8.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="all-bread" href="">ALL BREAD</a>
+                </div>
+                <div class="tab-pane container fade" id="menu2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="tab-pane-item col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-8.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-7.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-6.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-5.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane-item col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-4.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-3.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-2.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <div class="tab-pane-img">
+                                                <div class="img">
+                                                    <img style="background-image: url(img/home/story/product-backgroud-bg.webp)" src="img/home/story/story-1.webp" alt="" />
+                                                </div>
+                                                <div class="tab-pane-img-info">
+                                                    <a href="product-details.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                                    <a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                    <a href="javascript:;"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <a href="">Crunchy Loaf</a>
+                                            <h3>$56.40</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="all-bread" href="">ALL BREAD</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hot-sale">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="img/home/sale/sale-banner.webp" alt="" />
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>HOT SALE</h3>
+                                <h1>Weekend</h1>
+                                <a href="product.html"><button>Shop now</button></a>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hot-sale-1">
+                                    <p>up to</p>
+                                    <h4>30%</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-menu">
+            <p>OUR MENU</p>
+            <h1>WHAT WE HAVE</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="our-menu-slide">
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <div class="img">
+                                    <img class="img" src="img/home/our-menu/our-menu-1.jpg" alt="" />
+                                </div>
+                                <p>August 14, 2022</p>
+                                <a class="view" href="product-details.html">something new about pastry will be developed in 2022</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <div class="img">
+                                    <img class="img" src="img/home/our-menu/our-menu-2.jpg" alt="" />
+                                </div>
+                                <p>August 14, 2022</p>
+                                <a class="view" href="product-details.html">something new about pastry will be developed in 2022</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <div class="img">
+                                    <img class="img" src="img/home/our-menu/our-menu-3.jpg" alt="" />
+                                </div>
+                                <p>August 14, 2022</p>
+                                <a class="view" href="product-details.html">A year of change in the culinary industry</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="featured-product-1">
+                                <div class="img">
+                                    <img class="img" src="img/home/our-menu/our-menu-2.jpg" alt="" />
+                                </div>
+                                <p>August 14, 2022</p>
+                                <a class="view" href="product-details.html">Things you should know about cakes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="email">
+            <div class="container-fluid">
+                <img src="img/home/story/story-bg.webp" alt="" />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p data-aos="fade-left" data-aos-duration="2000">WE ARE BAKERFRESH</p>
+                        <h1 data-aos="fade-left" data-aos-duration="1600">NEWSLETTERS & SPECIAL OFFERS</h1>
+                        <div class="icon" data-aos="fade-left" data-aos-duration="1000">
+                            <input type="text" placeholder="Enter your email..." />
+                            <a href=""><i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="img/logo.svg" alt="" />
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>CATEGORIES</h5>
+                        <ul>
+                            <li><a href="product.html">Cupcake</a></li>
+                            <li><a href="product.html">Pastry</a></li>
+                            <li><a href="product.html">Muffin</a></li>
+                            <li><a href="product.html">Waffle</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>SERVICES</h5>
+                        <ul>
+                            <li><a href="product.html">Delivery</a></li>
+                            <li><a href="product.html">Payment</a></li>
+                            <li><a href="product.html">Returns</a></li>
+                            <li><a href="product.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>INFORMATION</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="product.html">Product</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- Bootstrap 5 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- slick slider -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- js myself -->
+        <script src="js/style.js"></script>
+    </body>
+</html>

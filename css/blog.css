@@ -1,0 +1,179 @@
+body {
+     background-color: #fff;
+     --primary-color: rgb(168, 99, 53);
+     --secondary-color: rgb(5, 5, 5);
+     font-family: "Golos Text", sans-serif;
+     position: relative;
+}
+.blog-us {
+     position: relative;
+}
+.blog-us .img {
+     position: relative;
+}
+.blog-us .img::before {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.445);
+}
+.blog-us h1 {
+     position: absolute;
+     color: #fff;
+     top: 48%;
+     left: 48%;
+     font-size: 50px;
+}
+.blog-us .text {
+     position: absolute;
+     color: #fff;
+     top: 70%;
+     left: 48.4%;
+}
+.blog-us .text a {
+     color: #fff;
+}
+.blog-us-content {
+     margin-top: 40px;
+}
+.blog-us-content .blog-banner {
+     width: 80%;
+     margin: 0 auto;
+}
+.blog-us-content ul li {
+     width: 60%;
+     margin-left: 280px;
+     margin-top: 24px;
+}
+.blog-share .icon {
+     display: flex;
+     justify-content: end;
+     align-items: end;
+     width: 60%;
+     border-top: 1px solid gray;
+     border-bottom: 1px solid gray;
+     padding: 20px;
+     margin-top: 40px;
+     margin-left: 280px;
+}
+.blog-share .icon li {
+     margin-right: 30px;
+     font-size: 20px;
+}
+.blog-share .icon a {
+     transition: 0.5s;
+}
+.blog-share .icon a:hover {
+     color: var(--primary-color);
+}
+.blog-reply {
+     margin-top: 60px;
+     margin-left: 540px;
+     width: 70%;
+}
+.blog-reply textarea {
+     padding: 20px;
+     margin-top: 20px;
+}
+.blog-reply .mail {
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+}
+.blog-reply .mail input {
+     padding: 10px;
+     margin-top: 24px;
+     margin-right: 100px;
+}
+.blog-reply .form-check {
+     margin-top: 20px;
+     margin-left: 5px;
+}
+.blog-reply button {
+     margin-top: 20px;
+     padding: 20px;
+     background-color: rgba(0, 0, 0, 0.904);
+     color: #fff;
+     border: none;
+     transition: 0.5s;
+}
+.blog-reply button:hover {
+     background-color: var(--primary-color);
+}
+
+.offcanvas-header h1 {
+     margin-top: 30px;
+}
+.offcanvas-header button {
+     margin-top: 30px;
+}
+.offcanvas-body img {
+     width: 30%;
+}
+
+.s_total {
+     background-color: #fff;
+     padding: 10px 10px 1px;
+     border-radius: 8px;
+     margin-bottom: 15px;
+}
+.s_total .title {
+     font-weight: 600;
+     font-size: 16px;
+     margin-bottom: 20px;
+}
+.s_total .info {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 15px;
+}
+.s_total .info.total {
+     font-weight: bold;
+     border-top: 1px solid #eaeaea;
+     padding-top: 15px;
+     margin-top: 20px;
+}
+.s_button {
+     background: var(--primary-color);
+     color: #ffffff;
+     width: 100%;
+     text-align: center;
+     display: block;
+     padding: 10px 20px;
+     border-radius: 10px;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-decoration: none;
+     transition: 0.5s;
+}
+.offcanvas-body {
+     position: relative;
+}
+.offcanvas-body .content_top h3 {
+     position: absolute;
+     top: 5%;
+     left: 35%;
+     font-size: 20px;
+     font-weight: 500;
+}
+.offcanvas-body .content_top a {
+     position: absolute;
+     top: 8%;
+     right: 10%;
+}
+.offcanvas-body .content_bot {
+}
+.offcanvas-body .bottom {
+     position: absolute;
+     bottom: 2%;
+     width: 70%;
+     left: 18%;
+}
+.offcanvas-body .bottom:hover .s_button {
+     background-color: rgb(155, 74, 19);
+     color: #fff;
+}

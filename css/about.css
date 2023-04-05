@@ -1,0 +1,233 @@
+.about_us-banner .img {
+    position: relative;
+}
+.about_us-banner .img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.about_us-banner {
+    position: relative;
+}
+.about_us-banner h1 {
+    position: absolute;
+    color: #fff;
+    font-size: 80px;
+    top: 40%;
+    left: 40%;
+}
+.about_us-banner a {
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    left: 47%;
+}
+.about_us-banner span {
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    left: 49.5%;
+}
+.about_us-content {
+    color: #fff;
+    margin-top: 100px;
+}
+.about_us-content h5 {
+    color: var(--primary-color);
+    margin-left: 240px;
+}
+.about_us-content h1 {
+    margin-left: 240px;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.about_us-content p {
+    margin-left: 240px;
+    margin-top: 40px;
+    font-size: 20px;
+    width: 60%;
+}
+.about_us-content .ki {
+    width: 40%;
+    margin-left: 300px;
+    margin-top: 80px;
+}
+.about_us-banner-1 {
+    margin-top: 120px;
+}
+.about_us-banner-1 .img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+.our-menu {
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
+.our-menu p {
+    color: var(--primary-color);
+}
+.our-menu h1 {
+    font-size: 60px;
+    padding-bottom: 80px;
+}
+.ceo-slide {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+.about_us-banner-1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 530px;
+}
+.about_us-banner-1 i {
+    margin-top: 30px;
+    color: rgb(228, 154, 17);
+}
+.about_us-banner-1 p {
+    width: 60%;
+    color: #000;
+    margin-left: 270px;
+    margin-top: 20px;
+}
+.about_us-banner-1 h3 {
+    margin-top: 20px;
+}
+.slick-dots {
+    bottom: -10px;
+}
+.time {
+    position: relative;
+    margin-top: 60px;
+}
+.time .content {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+}
+.time h5 {
+    color: var(--primary-color);
+}
+.time h3 {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 30px;
+}
+.time p {
+    color: #fff;
+    margin-top: 30px;
+}
+.time ul li {
+    margin-top: 50px;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+.time ul li span {
+    margin-left: 150px;
+    color: #fff;
+}
+.our-chef {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+    background-color: #3a3535;
+}
+.our-chef h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-top: 30px;
+}
+.our-chef .info {
+    margin-top: 40px;
+}
+.our-chef .img {
+    position: relative;
+}
+.our-chef .img::before {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: 0;
+    left: 14.5%;
+    background-color: rgba(224, 187, 138, 0.404);
+    opacity: 0;
+    transition: 0.5s;
+}
+.our-chef .info:hover .img::before {
+    opacity: 1;
+}
+.our-chef img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 60px;
+}
+.our-chef h3 {
+    margin-top: 20px;
+    color: #fff;
+}
+.our-chef p {
+    color: var(--primary-color);
+}
+.our-chef a i {
+    margin: 12px;
+    color: #ffffff50;
+    transition: 0.5s;
+}
+.our-chef a i:hover {
+    color: var(--primary-color);
+}
+.customer {
+    margin-top: 60px;
+    text-align: center;
+}
+.customer h1 {
+    color: #fff;
+    font-size: 50px;
+}
+.customer .customer-slide {
+    margin-top: 60px;
+}
+.customer .item {
+    background-color: #fff;
+    width: 30%;
+    padding: 12px;
+    margin: 0 12px;
+}
+.customer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 160px;
+}
+.customer .icon i {
+    color: var(--primary-color);
+    font-size: 50px;
+    margin-top: 16px;
+}
+.customer p {
+    margin-top: 20px;
+    font-size: 14px;
+    width: 80%;
+    margin-left: 40px;
+}
+.customer ul li {
+    margin-top: 10px;
+}
+.customer ul li span {
+    font-size: 12px;
+    color: var(--primary-color);
+}

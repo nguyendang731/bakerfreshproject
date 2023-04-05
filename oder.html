@@ -1,0 +1,304 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>about</title>
+
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Slick slider -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+        <!-- Css global -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Css local -->
+        <link rel="stylesheet" href="css/oder.css" />
+    </head>
+    <body>
+        <!-- Chọn 2 font: 1 font primary, 1 font secondary -->
+        <!-- Chọn 2 màu: 1 màu primary, 1 màu secondary -->
+
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <div class="nav-box d-flex w-100 align-items-center">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="" srcset="" /></a>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown">PRODUCT</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="product.html">Breadstick</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Baguette</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Chillex</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Pumpernickel</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                        <div class="icon">
+                            <a class="icon-search" href="javascript:;">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-xmark"></i>
+                            </a>
+                            <a href="oder.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            <a href="account.html"><i class="fa-sharp fa-solid fa-user"></i></a>
+                            <a class="nav-btn" data-bs-toggle="offcanvas" data-bs-target="#cart" href="javascript:;"><i class="fa-solid fa-bars"></i></a>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search" />
+                        <a href="product-details.html"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" id="cart">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Menu</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><input type="text" placeholder="Search..." /></li>
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="about.html"></a>About</li>
+                    <li><a href="product.html"></a>Product</li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact-us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="social_media">
+            <ul>
+                <div class="media">
+                    <li>
+                        <a href="contact.html"><i class="fa-solid fa-comment"></i></a>
+                    </li>
+                    <li class="phone">
+                        <a href=""><i class="fa-solid fa-phone"></i></a>
+                        <h3>03456789</h3>
+                    </li>
+                    <li class="scroll-top" onclick="topFunction()">
+                        <a href=""><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="oder">
+            <div class="banner">
+                <div class="img"><img src="img/product/product-banner.webp" alt="" /></div>
+                <h1>Checkout</h1>
+                <div class="text"><a href="">Home</a><span>/Checkout</span></div>
+            </div>
+        </div>
+
+        <div class="oder-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h3>Billing Address</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5>First Name*</h5>
+                                <input type="text" />
+                            </div>
+                            <div class="col-lg-6">
+                                <h5>Last Name*</h5>
+                                <input type="text" />
+                            </div>
+                            <div class="col-lg-12">
+                                <h5>Company name (optional)</h5>
+                                <input type="text" />
+                                <h5>Town / City *</h5>
+                                <input type="text" />
+                                <h5>Street address *</h5>
+                                <input type="text" placeholder="House number and street name" />
+                                <h5>State *</h5>
+                                <input type="text" />
+                                <h5>Phone *</h5>
+                                <input type="text" />
+                                <h5>Email address *</h5>
+                                <input type="text" />
+                                <h3>Additional information</h3>
+                                <h5>Order notes (optional)</h5>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="cart">
+                            <div class="cart-item">
+                                <div class="item_img">
+                                    <img src="img/product/product-1.webp" alt="" />
+                                </div>
+                                <div class="item_content">
+                                    <div class="content_top">
+                                        <div class="info">
+                                            <h3 class="title">Cream Muffin</h3>
+                                        </div>
+                                        <div class="delete">
+                                            <a class="typeClick" type="delete" href="javascript:;"><i class="fa-solid fa-trash-can"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content_bot">
+                                        <div class="left">
+                                            <span>Số lượng: </span>
+                                            <div class="quantity">
+                                                <span class="typeClick" type="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                <input type="text" name="quantity" value="1" disabled />
+                                                <span class="typeClick" type="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="price"><span>4</span> $</div>
+                                        <div class="pricecore" style="display: none">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="item_img">
+                                    <img src="img/product/product-2.webp" alt="" />
+                                </div>
+                                <div class="item_content">
+                                    <div class="content_top">
+                                        <div class="info">
+                                            <h3 class="title">Cream Muffin</h3>
+                                        </div>
+                                        <div class="delete">
+                                            <a class="typeClick" type="delete" href="javascript:;"><i class="fa-solid fa-trash-can"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content_bot">
+                                        <div class="left">
+                                            <span>Số lượng: </span>
+                                            <div class="quantity">
+                                                <span class="typeClick" type="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                <input type="text" name="quantity" value="1" disabled />
+                                                <span class="typeClick" type="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="price"><span>4</span> $</div>
+                                        <div class="pricecore" style="display: none">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="item_img">
+                                    <img src="img/product/product-3.webp" alt="" />
+                                </div>
+                                <div class="item_content">
+                                    <div class="content_top">
+                                        <div class="info">
+                                            <h3 class="title">Cream Muffin</h3>
+                                        </div>
+                                        <div class="delete">
+                                            <a class="typeClick" type="delete" href="javascript:;"><i class="fa-solid fa-trash-can"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content_bot">
+                                        <div class="left">
+                                            <span>Số lượng: </span>
+                                            <div class="quantity">
+                                                <span class="typeClick" type="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                <input type="text" name="quantity" value="1" disabled />
+                                                <span class="typeClick" type="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="price"><span>4</span> $</div>
+                                        <div class="pricecore" style="display: none">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_total">
+                                <h2 class="title">Your order</h2>
+                                <div class="info">
+                                    <div>Ship</div>
+                                    <div>0</div>
+                                </div>
+                                <div class="info">
+                                    <div>PLACE ORDER</div>
+                                    <div class="sum"><span>12</span> $</div>
+                                </div>
+                            </div>
+                            <a href="dat-hang.php" class="s_button">PLACE ORDER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img src="img/logo.svg" alt="" />
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>CATEGORIES</h5>
+                        <ul>
+                            <li><a href="product.html">Cupcake</a></li>
+                            <li><a href="product.html">Pastry</a></li>
+                            <li><a href="product.html">Muffin</a></li>
+                            <li><a href="product.html">Waffle</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>SERVICES</h5>
+                        <ul>
+                            <li><a href="product.html">Delivery</a></li>
+                            <li><a href="product.html">Payment</a></li>
+                            <li><a href="product.html">Returns</a></li>
+                            <li><a href="product.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>INFORMATION</h5>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="product.html">Product</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- Bootstrap 5 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- slick slider -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!-- js myself -->
+        <script src="js/style.js"></script>
+    </body>
+</html>

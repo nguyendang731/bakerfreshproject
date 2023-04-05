@@ -1,0 +1,463 @@
+.featured-product .slick-prev {
+     left: -70px;
+}
+.featured-product .slick-prev::before {
+     color: #fff;
+}
+.featured-product .slick-next {
+     right: -70px;
+}
+.featured-product .slick-next::before {
+     color: #fff;
+}
+.featured-product {
+     margin-top: -50px;
+     padding: 20px;
+}
+.featured-product h1 {
+     margin-left: 20px;
+     margin-top: 20px;
+     color: #fff;
+     font-weight: 400;
+}
+.featured-product h5 {
+     margin-left: 20px;
+     margin-top: 20px;
+     color: #ffffff86;
+     font-weight: 400;
+}
+.featured-product .item {
+     margin: 0 15px;
+}
+.featured-product .featured-product-1 {
+     position: relative;
+     margin-top: 20px;
+     padding: 20px;
+     text-align: center;
+     overflow: hidden;
+}
+.featured-product .featured-product-1 .img {
+     transition: 1s;
+}
+.featured-product .featured-product-1:hover .img {
+     transform: scale(1.2);
+}
+.featured-product .featured-product-1 h3 {
+     margin-top: 40px;
+     font-size: 20px;
+     font-weight: 700;
+     color: #fff;
+}
+.featured-product .featured-product-1 .view {
+     margin-top: 50px;
+     color: #fff;
+     transition: 0.5s;
+}
+.featured-product .featured-product-1:hover .view {
+     color: var(--primary-color);
+}
+.fresh-products {
+     position: relative;
+}
+.fresh-products::before {
+     content: "";
+     width: 100%;
+     height: 100%;
+     background-color: #000000ab;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 999;
+}
+.quality {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 125px;
+     text-align: center;
+     position: relative;
+}
+.quality h3 {
+     position: absolute;
+     color: #fff;
+     z-index: 999;
+     top: 25%;
+     left: 45%;
+     transform: -50%, -50%;
+     font-family: "Pacifico", cursive;
+}
+.quality h1 {
+     position: absolute;
+     color: #fff;
+     z-index: 999;
+     width: 70%;
+     font-size: 60px;
+     top: 38%;
+     left: 15%;
+     transform: -50%, -50%;
+     font-family: "Pacifico", cursive;
+}
+.quality p {
+     position: absolute;
+     color: #fff;
+     z-index: 999;
+     font-size: 30px;
+     top: 65%;
+     left: 42.5%;
+}
+.story {
+     margin-top: 40px;
+     position: relative;
+}
+.story h5 {
+     position: absolute;
+     top: 15%;
+     left: 10%;
+     color: var(--primary-color);
+     z-index: 999;
+}
+.story h1 {
+     font-size: 36px;
+     position: absolute;
+     top: 20%;
+     left: 10%;
+     color: #fff;
+     font-size: 60px;
+     width: 40%;
+     z-index: 999;
+}
+.story .content p {
+     position: absolute;
+     width: 30%;
+     top: 50%;
+     left: 9.5%;
+     color: #fff;
+     z-index: 999;
+}
+.story button {
+     position: absolute;
+     top: 75%;
+     left: 10%;
+     padding: 16px;
+     z-index: 999;
+     color: #fff;
+     border: 1px solid #fff;
+     border-radius: 0px;
+     transition: 0.3s;
+}
+.story button:hover {
+     background-color: var(--primary-color);
+}
+.menu {
+     margin-top: 40px;
+}
+.menu p {
+     font-size: 16px;
+     text-align: center;
+     color: var(--primary-color);
+}
+.menu h1 {
+     margin-top: 30px;
+     text-align: center;
+     color: #fff;
+     font-size: 60px;
+}
+.menu .nav {
+     justify-content: center;
+}
+.nav .nav-item {
+     margin: 60px;
+}
+.tab-content {
+     text-align: center;
+}
+.tab-content .tab-pane .tab-pane-item {
+     padding-bottom: 50px;
+}
+.tab-content img {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 30px;
+     width: 100%;
+     overflow: hidden;
+     border-radius: 100%;
+}
+.tab-content .img {
+     position: relative;
+}
+.tab-content .img::before {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     border-radius: 50%;
+     background-color: rgba(0, 0, 0, 0.603);
+     opacity: 0;
+     transition: 0.5s;
+}
+.tab-pane-img .tab-pane-img-info {
+     position: absolute;
+     top: 43%;
+     left: 18%;
+     color: #fff;
+     font-size: 30px;
+     opacity: 0;
+     transition: 0.5s;
+}
+.tab-content .item:hover .img::before {
+     opacity: 1;
+}
+.tab-content .item:hover:hover .tab-pane-img-info {
+     opacity: 1;
+}
+.tab-content a {
+     color: #fff;
+     font-size: 20px;
+     font-weight: 100;
+     transition: 0.5s;
+}
+.tab-content h3 {
+     color: #fff;
+     font-size: 16px;
+     margin-top: 10px;
+}
+.tab-content .all-bread {
+     font-size: 16px;
+     transition: 0.5s;
+}
+.tab-content .all-bread:hover {
+     color: var(--primary-color);
+}
+.tab-pane-img {
+     position: relative;
+}
+
+.tab-pane-img .tab-pane-img-info i {
+     margin: 20px;
+     transition: 0.5s;
+}
+.tab-pane-img .tab-pane-img-info i:hover {
+     color: var(--primary-color);
+}
+.menu .nav-link {
+     color: #fff;
+     font-size: 14px;
+}
+.nav-pills .nav-link.active {
+     color: #fff;
+     background-color: var(--primary-color);
+     border-radius: 0;
+}
+.hot-sale {
+     margin-top: 120px;
+     position: relative;
+     color: #fff;
+}
+.hot-sale h3 {
+     position: absolute;
+     top: 10%;
+     left: 25%;
+     font-size: 20px;
+}
+.hot-sale h1 {
+     position: absolute;
+     top: 27%;
+     left: 20%;
+     font-size: 80px;
+     font-family: "Pacifico", cursive;
+}
+.hot-sale button {
+     position: absolute;
+     padding: 12px;
+     top: 75%;
+     left: 25%;
+     border: none;
+     background-color: var(--primary-color);
+     color: #fff;
+     font-weight: 500;
+     transition: 0.5s;
+}
+.hot-sale button:hover {
+     background-color: #fff;
+     color: var(--primary-color);
+}
+.hot-sale .hot-sale-1 {
+     position: absolute;
+     background-color: #fff;
+     color: var(--primary-color);
+     padding: 12px;
+     top: 30%;
+     border-radius: 8px;
+}
+.our-menu {
+     color: #fff;
+     text-align: center;
+     margin-top: 100px;
+}
+.our-menu p {
+     color: var(--primary-color);
+}
+.our-menu h1 {
+     font-size: 60px;
+     padding-bottom: 80px;
+}
+.our-menu .item {
+     position: relative;
+     margin: 0 15px;
+}
+.our-menu .item .img {
+     position: relative;
+     transition: 0.5s;
+     overflow: hidden;
+}
+.our-menu .item .img::before {
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.473);
+     z-index: 990;
+}
+.our-menu .item p {
+     position: absolute;
+     color: #fff;
+     top: 75%;
+     left: 37%;
+     z-index: 999;
+}
+.our-menu .item a {
+     position: absolute;
+     width: 80%;
+     color: #fff;
+     top: 82%;
+     left: 13%;
+     z-index: 999;
+     font-size: 20px;
+}
+.our-menu .item:hover img {
+     transform: scale(1.2);
+}
+.email {
+     position: relative;
+     margin-top: 120px;
+}
+.email p {
+     position: absolute;
+     color: var(--primary-color);
+     top: 20%;
+     left: 12%;
+}
+.email h1 {
+     position: absolute;
+     color: #fff;
+     width: 50%;
+     font-size: 65px;
+     top: 30%;
+     left: 12%;
+}
+.email .icon {
+     position: absolute;
+     top: 60%;
+     left: 12%;
+}
+.email .icon input {
+     position: relative;
+     padding: 12px;
+     padding-right: 240px;
+     outline: none;
+     margin-top: 50px;
+}
+.email .icon a {
+     position: absolute;
+     top: 65%;
+     right: 5%;
+     transition: 0.5s;
+}
+.email .icon a:hover {
+     color: var(--primary-color);
+}
+@media (max-width: 1200px) {
+     .story h1 {
+          font-size: 32px;
+          top: 25%;
+     }
+     .story .content {
+          font-size: 12px;
+          top: 50%;
+          width: 80%;
+     }
+     .story .content span {
+          display: none;
+     }
+     .tab-pane-img-info {
+          display: inline-flex;
+     }
+     .tab-pane-img-info a {
+          font-size: 16px;
+          margin: -5px;
+     }
+     .hot-sale h3 {
+          font-size: 16px;
+          left: 20%;
+     }
+     .hot-sale h1 {
+          font-size: 40px;
+          left: 20%;
+     }
+     .hot-sale button {
+          font-size: 16px;
+          left: 20%;
+          top: 60%;
+     }
+     .our-menu .item p {
+          left: 30%;
+          top: 70%;
+     }
+     .our-menu .item a {
+          font-size: 16px;
+          top: 80%;
+     }
+     .email h1 {
+          font-size: 32px;
+          top: 40%;
+     }
+}
+@media (max-width: 991px) {
+     .about-us {
+          width: 50%;
+          margin: 0 auto;
+          margin-top: 60px;
+     }
+     .about-us .content h5 {
+          left: 40%;
+          top: 20%;
+     }
+     .about-us .content span {
+          left: 40%;
+          top: 40%;
+     }
+     .quality .content {
+          top: 50%;
+          left: 50%;
+     }
+     .quality .content h3 {
+          font-size: 16px;
+          top: 35%;
+     }
+     .quality .content h1 {
+          font-size: 16px;
+          top: 45%;
+     }
+     .quality .content p {
+          font-size: 16px;
+     }
+     .tab-content .item {
+          width: 30%;
+          margin: 0 auto;
+     }
+}
